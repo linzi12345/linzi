@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function write_date() {
+            var week
+            if (new Date().getDay() == 0) week = "星期日"
+            if (new Date().getDay() == 1) week = "星期一"
+            if (new Date().getDay() == 2) week = "星期二"
+            if (new Date().getDay() == 3) week = "星期三"
+            if (new Date().getDay() == 4) week = "星期四"
+            if (new Date().getDay() == 5) week = "星期五"
+            if (new Date().getDay() == 6) week = "星期六"
+            document.write(new Date().getFullYear() + "年" + (new Date().getMonth() + 1) + "月" + new Date().getDate() + "日 " + week);
+        }
+        function cut_str(str, len) {
+            var str_length = get_length(str);
+            if (str_length > len) {
+                var char_length = 0;
+                for (var i = 0; i < str.length; i++) {
+                    var son_str = str.charAt(i);
+                    encodeURI(son_str).length > 2 ? char_length += 1 : char_length += 0.5;
+                    if (char_length >= len) {
+                        var sub_len = char_length == len ? i + 1 : i;
+                        var rt_str = str.substr(0, sub_len - 1);
+                        rt_str += "...";
+                        return rt_str;
+                        break;
+                    }
+                }
+            } else {
+                return str;
+            }
+        }
+        function get_length(s) {
+            var char_length = 0;
+            for (var i = 0; i < s.length; i++) {
+                var son_char = s.charAt(i);
+                encodeURI(son_char).length > 2 ? char_length += 1 : char_length += 0.5;
+            }
+            return char_length;
+        }  
+    </script>
+    <link rel="stylesheet" type="text/css" href="img/ct_style.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.SuperSlide.js"></script>
+
+</head>
+
+<body>
+    <div class="head_bg twhite1 animated fadeInDown">
+        <div class="tit_bg">
+
+            <div class="tit_l">
+                <script>write_date()</script>
+
+            </div>
+        </div>
+        <div class="logo"><img src="http://www.longyan.gov.cn/images/18ly_ly_logo2.png" class="logo_img3"></div>
+        <div class="menu">
+            <ul>
+                <li class="sub_menu">
+                    <a href="Untitled-2.html"><span class="icon1 ico">网站首页</span></a>
+                </li>
+                <li class="sub_menu">
+                    <a href="xw"><span class="icon3 ico">新闻中心</span></a>
+                </li>
+                <li class="sub_menu">
+                    <a href="Untitled-1.html"><span class="icon3 ico">走进龙岩</span></a>
+                </li>
+                <li class="sub_menu">
+                    <a href="tour.html"><span class="icon3 ico">景区介绍</span></a>
+                </li>
+                <li class="sub_menu">
+                    <a href="hongse.html"><span class="icon3 ico">红色文化</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="header_21_con2 fj_ban1">
+        <div class="container_21">
+            <div class="header_tq">
+                <div class="header_top">
+                    <span>
+                        <script>write_date()</script>
+                    </span>
+                    <span></span>&nbsp;龙岩市
+                    <span>多云</span>
+                    <span>14℃~21℃</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tit" barrier-free-idx="216">
+        <div class="gl_tit">当前位置：<a href="../" title="首页" class="CurrChnlCls">首页</a>&nbsp;&gt;&nbsp;<a href="./"
+                title="新闻中心" class="CurrChnlCls">新闻中心</a></div>
+        <div class="clear" barrier-free-idx="227"></div>
+    </div>
+
+    <div class="pad20 pad_t1">
+        <div spellcheck="margin-top:1px">
+            <div class="xw_l pic_list">
+                <ul class="pic">
+
+                    <li><a href="http://www.fj.gov.cn/zwgk/ztzl/yqfk/" target="_blank"><img
+                                src="img/W020210919422078472960.jpg" alt="微信图片_20210919102212.jpg" width=364 height=354
+                                border=0 /></a></li>
+
+                    <li><a href="./ctxw/202109/t20210902_1818675.htm" target="_blank"><img
+                                src="img/W020210902394852183004.png" alt="09021.png" width=364 height=354 border=0 /></a>
+                    </li>
+
+                    <li><a href="./ctxw/202107/t20210728_1808554.htm" target="_blank"><img
+                                src="img/W020210728634200097728.png" alt="72802.png" width=364 height=354 border=0 /></a>
+                    </li>
+
+                    <li><a href="./ctxw/202107/t20210728_1808550.htm" target="_blank"><img
+                                src="img/W020210728632996933292.png" alt="72801.png" width=364 height=354 border=0 /></a>
+                    </li>
+
+                </ul>
+                <div class="txt-bg"></div>
+                <div class="txt">
+                    <ul>
+
+                        <li><a href="http://www.fj.gov.cn/zwgk/ztzl/yqfk/" target="_blank"
+                                title="疫情防控·福建在行动">疫情防控·福建在行动</a>
+                        </li>
+
+                        <li><a href="./ctxw/202109/t20210902_1818675.htm" target="_blank"
+                                title="长汀：各校坚守疫情防控阵地 确保安全顺利开学">长汀：各校坚守疫情防控阵地 确...</a></li>
+
+                        <li><a href="./ctxw/202107/t20210728_1808554.htm" target="_blank"
+                                title="长汀县领导调研长汀智能运营中心">长汀县领导调研长汀智能运营中心</a></li>
+
+                        <li><a href="./ctxw/202107/t20210728_1808550.htm" target="_blank"
+                                title="长汀县召开第十七届人大常委会第四十次会议">长汀县召开第十七届人大常委会...</a></li>
+
+                    </ul>
+                </div>
+                <ul class="num">
+                    <li class="on"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="xw_c">
+                <div class="ti1 tit_hov">
+                    <ul>
+                        <li class="on"><a href="./ctxw/" target="_blank">长汀要闻</a></li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="mar_t5">
+                    <ul class="list">
+                        <script>
+                            jQuery(document).ready((function () {
+                                $.ajax({
+                                    contentType: "application/x-www-form-urlencoded",
+                                    url: '/*https://service-ir0f268w-1302922380.gz.apigw.tencentcs.com/release/more',
+                                    type: 'get',
+                                    success: function (res) {
+                                        var d = res
+                                        d = eval(d)
+                                        $.each(d, function (n, jsonp) {
+                                            $('.list').append("<li><span>" + jsonp.time + "</span><a href='" + jsonp.href + "' title='" + jsonp.title + "' target='_blank'>" + jsonp.title + "</a></li>")
+                                        });
+                                    }
+                                });
+                            })
+                            )
+                        </script>
+                    </ul>
+                </div>
+            </div>
+            <div class="xw_r">
+                <div class="xw_tit"><span>公示公告</span></div>
+                <div class="txtMarquee-top">
+                    <div class="bd">
+                        <ul class="infoList">
+
+                            <li><a href="./gsgg/202112/t20211222_1854614.htm" target="_blank"
+                                    title="十四届长汀县委第一轮巡察公告">十四届长汀县委第一轮巡察公告</a>(2021-12-22)</li>
+
+                            <li><a href="./gsgg/202112/t20211214_1852137.htm" target="_blank"
+                                    title="长汀县行政服务中心管委会11月份政务服务“好差评”通报">长汀县行政服务中心管委会11月份政务服务“好差评”通报</a>(2021-12-14)</li>
+
+                            <li><a href="./gsgg/202112/t20211213_1851595.htm" target="_blank"
+                                    title="长汀县农民专业合作社县级示范社评选办法（修订稿）">长汀县农民专业合作社县级示范社评选办法（修订稿）</a>(2021-12-13)</li>
+
+                            <li><a href="./gsgg/202111/t20211123_1845099.htm" target="_blank"
+                                    title="关于拟评定为2021年度县级  农民专业合作社示范社名单的公示">关于拟评定为2021年度县级
+                                    农民专业合作社示范社名单的公示</a>(2021-11-23)
+                            </li>
+
+                            <li><a href="./gsgg/202111/t20211124_1845245.htm" target="_blank"
+                                    title="人保财险长汀支公司关于扶贫保理赔信息的公示">人保财险长汀支公司关于扶贫保理赔信息的公示</a>(2021-11-23)</li>
+
+                            <li><a href="./gsgg/202111/t20211116_1841838.htm" target="_blank"
+                                    title="长汀县2021年惠企政策兑现服务事项梳理清单公布">长汀县2021年惠企政策兑现服务事项梳理清单公布</a>(2021-11-16)</li>
+
+                            <li><a href="./gsgg/202111/t20211112_1840768.htm" target="_blank"
+                                    title="2021年10月长汀县好差评情况通报">2021年10月长汀县好差评情况通报</a>(2021-11-12)</li>
+
+                            <li><a href="./gsgg/202110/t20211026_1832897.htm" target="_blank"
+                                    title="人保财险长汀支公司关于扶贫保理赔信息的公示">人保财险长汀支公司关于扶贫保理赔信息的公示</a>(2021-10-26)</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="mar_t20">
+            <div class="hdjl_con2_l">
+                <div class="title2"><span></span>龙岩要闻
+                </div>
+                <div class="pad19 pad_t10 pad_b10 bor1 bor_to h212">
+                    <div class="hdjl_list">
+                        <ul id="lyInfoUI">
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="hdjl_con2_r">
+                <div class="title2"><span></span>国务院新闻</div>
+                <div class="pad19 pad_t10 pad_b10 bor1 bor_to h212">
+                    <div class="hdjl_list">
+                        <ul id="pushInfoUI">
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="bot_bg animated fadeInUp">
+        <div class="bot">
+            <div class="bot_c">
+                <p class="bot_tit"><a href="'+path+'qtgn/gybz" target="_blank">关于本站</a>|<a href="'+path+'qtgn/wzdt"
+                        target="_blank">网站地图</a>|<a href="'+path+'qtgn/lxfs" target="_blank">联系方式</a>|<a
+                        href="'+path+'qtgn/wzsm" target="_blank">网站声明</a>|<a href="'+path+'qtgn/wzjy"
+                        target="_blank">网站建议</a></p>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/com.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //中国政府网推送信息---国务院信息
+            $.ajax({
+                url: 'http://www.gov.cn/pushinfo/v150203/pushinfo.jsonp',
+                dataType: "jsonp",
+                jsonp: "pushInfoJsonpCallBack",
+                jsonpCallback: "pushInfoJsonpCallBack",
+                scriptCharset: "utf-8",
+                success: function (data) {
+                    $.each(data, function (i, json) {
+                        $("#pushInfoUI").append("<li><span>" + json.pubDate + "</span><a href='" + json.link + "' title='" + json.title + "' target='_blank'>" + cut_str(json.title, 35) + "</a></li>")
+                        if (i > 3) return false;
+                    });
+                    $("#pushInfoUI").append("<li><a title='国务院客户端上线' href=' http://www.gov.cn/xinwen/2016-02/26/content_5046572.htm ' target='_blank' style='color:red;'>国务院客户端上线</a>|<a title='国务院客户端来了，如何改变你我生活？| 3分钟动画' href='http://www.gov.cn/xinwen/2016-03/01/content_5047756.htm' target='_blank' style='color:red;'>如何改变你我生活？(3分钟动画)</a> </li>");
+                },
+                error: function () {
+                    //alert('fail');
+                }
+            });
+            //龙岩要闻
+            $.ajax({
+                url: 'http://www.longyan.gov.cn/xw/yw2/index_10476.js',
+                dataType: 'jsonp',
+                jsonp: 'jQuery1112002638430511401446_1609315841955',
+                jsonpCallback: 'jQuery1112002638430511401446_1609315841955',
+                success: function (res) {
+                    var d = res
+                    $.each(d.data, function (n, jsonp) {
+                        $("#lyInfoUI").append("<li><span>" + jsonp.docreltime + "</span><a href='" + jsonp.url + "' title='" + jsonp.title + "' target='_blank'>" + cut_str(jsonp.title, 23) + "</a></li>")
+                        if (n > 4) return false;
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

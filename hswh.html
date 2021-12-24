@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="img/ct_style.css">
+    <script type="text/javascript">
+        function change_div(class1) {
+            var x1 = document.getElementsByClassName("tu_list");
+            var x2 = document.getElementsByClassName("gl_list");
+            if (class1 == 'tu_list') {
+                x1[0].style.display = 'block';
+                x2[0].style.display = 'none';
+            }
+            else {
+                x1[0].style.display = 'none';
+                x2[0].style.display = 'block';
+            }
+        }
+        function write_date() {
+            var week
+            if (new Date().getDay() == 0) week = "星期日"
+            if (new Date().getDay() == 1) week = "星期一"
+            if (new Date().getDay() == 2) week = "星期二"
+            if (new Date().getDay() == 3) week = "星期三"
+            if (new Date().getDay() == 4) week = "星期四"
+            if (new Date().getDay() == 5) week = "星期五"
+            if (new Date().getDay() == 6) week = "星期六"
+            document.write(new Date().getFullYear() + "年" + (new Date().getMonth() + 1) + "月" + new Date().getDate() + "日 " + week);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="head_bg twhite1 animated fadeInDown">
+        <div class="tit_bg">
+
+            <div class="tit_l">
+                <script>write_date()</script>
+
+            </div>
+        </div>
+        <div class="logo"><img src="http://www.longyan.gov.cn/images/18ly_ly_logo2.png" class="logo_img3"></div>
+        <div class="menu">
+            <ul>
+                <li class="sub_menu">
+                    <a href="Untitled-2.html"><span class="icon1 ico">网站首页</span></a>
+                </li>
+                <li class="sub_menu">
+                    <a href="xw"><span class="icon3 ico">新闻中心</span></a>
+                </li>
+                <li class="sub_menu">
+                    <a href="Untitled-1.html"><span class="icon3 ico">走进龙岩</span></a>
+                </li>
+                <li class="sub_menu">
+                    <a href=""><span class="icon3 ico">景区介绍</span></a>
+                </li>
+                <li class="sub_menu">
+                    <a href=""><span class="icon3 ico">红色文化</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="header_21_con2 fj_ban1">
+        <div class="container_21" >
+            <div class="header_tq">
+                <div class="header_top">
+                    <span>
+                        <script>write_date()</script>
+                    </span>
+                    <span></span>&nbsp;龙岩市
+                    <span>多云</span>
+                    <span>14℃~21℃</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="container">
+            <div class="gkxq-nr gkxq-nr1 clearflx" >
+                <div class="gkxq-wz fl">
+                    <div class="gkxq-title"><img src="img/20201105_gkxq_bt3.png" alt=""></div>
+                    <p>全省有70个老区苏区县（市、区），其中原中央苏区县（市、区）37个。老区人口占全省总人口80%左右。革命战争年代，福建参加革命战争的红军、新四军、游击队10万多人，其中参加长征3万多人，为革命牺牲6万多人。具有光荣的“双拥”传统，是全国唯一连续五届所有设区市都被评为“全国双拥模范城”的省份。
+                    </p>
+                </div>
+                <div class="gkxq-tp fr">
+                    <img src="img/W020180920414187552697.jpg" alt="">
+                    <span></span>
+
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="gkxq-nr gkxq-nr1  clearflx" >
+                <div class="gkxq-wz fr">
+                    <div class="gkxq-title1"><p>瞿秋白纪念碑</p></div>
+                    <p>瞿秋白是中国共产党早期主要领导人之一，是伟大的马克思主义者，卓越的无产阶级革命家、理论家和宣传家，中国革命文学事业的奠基者之一。1935年2月11，瞿秋白不幸被捕，先后关押于上杭、长汀，在狱中笑对敌人的威逼利诱，写下了《多余的话》，于6月18日在长汀罗汉岭英勇就义。
+                    </p>
+                </div>
+                <div class="gkxq-tp gkxq-tp1 fl">
+                    <img src="img/W020200710558755793760.jpg" alt="">
+                    <span></span>
+                </div>
+                <div class="clear"></div>
+
+            </div>
+
+            <div class="gkxq-nr clearflx" >
+                <div class="gkxq-wz fl">
+                    <div class="gkxq-title1"><p>福建省苏维埃政府旧址</p></div>
+                    <p>1932年3月18日福建省第一次工农兵代表大会在此召开，通过了《实行劳动法令》、《土地问题》、《军事工作》、《财政经济问题》、《苏维埃建设问题》等决议案，成立了福建省苏维埃政府，张鼎丞任主席。下设裁判、财政、粮食、土地、妇女、文化、劳动、工农检查等8个部。会后省苏机关在此办公。“省苏”的成立，标志着福建苏区的革命斗争进入了一个全盛时期。
+                    </p>
+                </div>
+                <div class="gkxq-tp fr">
+                    <img src="img/W020200710421505963164.jpg" alt="">
+                    <span></span>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="gkxq-nr gkxq-nr1  clearflx" >
+                <div class="gkxq-wz fr">
+                    <div class="gkxq-title1"><p>古田会议会址</p></div>
+                    <p>古田会议，是中国工农红军第四军在1929年12月28日至29日在福建省上杭县古田村召开的第九次党的代表大会，即红军第四军党的第九次代表大会，因会议在福建省上杭县古田村召开，史称“古田会议”。 会议选举产生了新的中共红四军前敌委员会，毛泽东当选为书记。
+                    </p>
+                </div>
+                <div class="gkxq-tp gkxq-tp1 fl">
+                    <img src="img/W020180920414187552697.jpg" alt="">
+                    <span></span>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="gkxq-nr clearflx" >
+                <div class="gkxq-wz fl">
+                    <div class="gkxq-title1"><p>上杭才溪乡调查</p></div>
+                    <p>毛泽东以才溪乡的模范事迹，为全苏区树立了具体榜样，解决了在国内革命战争环境下，根据地的建设不仅是必要的而且是可能的重要问题，从而用铁的事实去粉碎一切机会主义者污蔑根据地不可能进行建设的瞎说，并有了“没有调查就没有发言权”的著名论断。这在当前深入开展贯彻落实科学发展观，实事求是根据实际全面建设小康社会中有着非同凡响的重要意义。
+                    </p>
+                </div>
+                <div class="gkxq-tp fr">
+                    <img src="img/W020180831633003744716.jpg" alt="">
+                    <span></span>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+
+        </div>
+    </div>
+    <div class="bot_bg animated fadeInUp">
+        <div class="bot">
+            <div class="bot_c">
+                <p class="bot_tit"><a href="'+path+'qtgn/gybz" target="_blank">关于本站</a>|<a href="'+path+'qtgn/wzdt"
+                        target="_blank">网站地图</a>|<a href="'+path+'qtgn/lxfs" target="_blank">联系方式</a>|<a
+                        href="'+path+'qtgn/wzsm" target="_blank">网站声明</a>|<a href="'+path+'qtgn/wzjy"
+                        target="_blank">网站建议</a></p>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</body>
+
+</html>
